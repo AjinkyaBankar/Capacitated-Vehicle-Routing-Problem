@@ -150,8 +150,3 @@ print(tours)
 
 elapsed_time = time.time() - t_ini
 print('Total run-time: {}'.format(elapsed_time))
-
-# Write recipe outputs
-CVRP_SUBTOUR_df = pd.DataFrame({'TOURS': [0]})
-CVRP_SUBTOUR = dataiku.Dataset("CVRP_SUBTOUR")
-CVRP_SUBTOUR.write_with_schema(CVRP_SUBTOUR_df)
